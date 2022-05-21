@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/viewText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:width="390dp"
+            android:height="120dp"
+            android:background="#fff"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margemTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/texto"
+            android:textSize="@dimen/sizeTitle"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:width="275dp"
+            />
+
+        <Button
+            android:id="@+id/buttonShowText"
+            android:layout_width="wrap_content"
+            android:text="@string/imp"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto2"
+        android:layout_marginTop="25dp"
+        android:textSize="@dimen/sizeTitle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margemTitle">
+
+        <SeekBar
+            android:id="@+id/skbTextSize"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:max="80"
+
+            />
+
+        <TextView
+            android:id="@+id/showSkbTextSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margemTitle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sizeTitle"
+            android:text="@string/texto3"
+            android:layout_marginBottom="@dimen/margemTitle"
+            />
+
+        <CheckBox
+            android:id="@+id/chkNegrito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/negrito"
+            android:layout_marginLeft="@dimen/margemLabel"/>
+
+        <CheckBox
+            android:id="@+id/chkItalico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/italico"
+            android:layout_marginLeft="@dimen/margemLabel"/>
+
+        <CheckBox
+            android:id="@+id/chkMaiuscula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maiuscula"
+            android:layout_marginLeft="@dimen/margemLabel"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/sizeTitle"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sizeTitle"
+            android:text="@string/texto4"
+            android:layout_marginBottom="@dimen/sizeTitle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            >
+            <RadioGroup
+                android:id="@+id/rdgCor"
+                android:layout_marginLeft="@dimen/margemLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdbMVermelho"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/vermelho" />
+
+                <RadioButton
+                    android:id="@+id/rdbVerde"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/verde" />
+
+                <RadioButton
+                    android:id="@+id/rdbAzul"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/azul" />
+
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+  </ScrollView>
